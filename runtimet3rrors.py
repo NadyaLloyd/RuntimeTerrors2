@@ -44,7 +44,7 @@ for i in range(num_of_enemies):
 # bullet
 # ready - you CANNOT see bullet on the window
 # fire - you CAN see the bullet moving
-bulletimg1 = pygame.image.load('bullet.jpg')
+bulletimg1 = pygame.image.load('firewall.gif')
 bulletimg2 = pygame.image.load('bullet.png')       # original
 #global bulletimg
 #bulletimg = bulletimg1
