@@ -69,7 +69,7 @@ def show_score(x, y):
     win.blit(score, (x, y))
 
 def game_over_text():
-    over_text = font.render('GAME OVER', True, (0, 139, 0))
+    over_text = font.render('You have been hacked! GAME OVER', True, (0, 139, 0))
     win.blit(over_text, (300, 300))
 
 def player(x, y):
@@ -93,8 +93,8 @@ def fire_bullet(x, y):
     global bullet_state
     bullet_state = 'fire'
     win.blit(toggle_bullet.bulletimg, (x + 16, y + 10))
-     
-    
+
+
 def collision(enemyX, enemyY, bulletX, bulletY):
     distance = math.sqrt(math.pow(enemyX - bulletX, 2) + math.pow(enemyY - bulletY, 2))
     if distance < 27:
